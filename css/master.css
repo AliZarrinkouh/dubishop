@@ -60,7 +60,7 @@ body {
 #header .search {
     font-weight: bolder;
     height: 100px;
-    margin: 10px 0px;
+    margin: 55px 0px;
     display: inline-flex;
     height: 32px;
 }
@@ -72,7 +72,10 @@ body {
 	color: rgba(128, 128, 128, 0.37);
 	font-size: 13px;
 	font-family: iransans;
-	display: block;
+	display: none;
+}
+.login{
+	margin: 29px 0px;
 }
 #header .search label {
 	display: block;
@@ -85,6 +88,14 @@ body {
 #header .search label option {
 	color: rgba(128, 128, 128, 0.37);
 	text-align: right;
+}
+input[type=search]{
+	text-align: right;
+    direction: rtl;
+    background-image: url("../images/Group17.png");
+    background-repeat: no-repeat;
+    border: none;
+    padding: 0px 10px;
 }
 #header .login span :hover {
 	color: rgb(73, 69, 69);
@@ -132,11 +143,19 @@ body {
 	border-bottom: 1px solid rgba(156, 153, 153, 0.089);
 	;
 }
+.line-header {
+	margin: -30px 0px;
+	width: 100%;
+	height: 10px;
+	border-bottom: 1px solid rgba(156, 153, 153, 0.089);
+	;
+}
 .login img{
 	padding: 10px 15px;
 }
 #opt{
 	text-align: right;
+	border: none;
 }
 .text {
 	text-align: right;
@@ -484,3 +503,121 @@ body {
 .ourvals p{
 	text-align: center;
 }
+.contactform{
+	text-align: center;
+	direction: rtl;
+	float: right;
+}
+.contactform label{
+	text-align: right;
+	float: right;
+}
+.contactform input[type=text]{
+	background: #F5F5F5;
+	border-radius: 10px;
+	border: none;
+	padding: 15px 5px;
+	float: right;
+	margin-top: 25px;
+}
+.contactform input[type=email]{
+	background: #F5F5F5;
+	border-radius: 10px;
+	border: none;
+	padding: 15px 5px;
+	float: right;
+} 
+.contactform input[type=submit] {
+    background: linear-gradient(256.53deg, #FFD700 -5.35%, #EDC800 110.04%);
+    padding: 15px 30px;
+	float: right;
+    border: none;
+    border-radius: 5px;
+	margin-top: 37px;
+}
+.contactform input[type=radio]{
+	float: right;
+	margin-top: 27px;
+	opacity: 0;
+}
+.contactform label{
+	float: right;
+	margin-top: 22px;
+	margin-right: 10px;
+}
+.formtitle{
+	text-align: center;
+}
+.teacherstitle{
+	text-align: right;
+}
+.teachersleveltitle{
+	text-align: right;
+	direction: rtl;
+}
+.teacher{
+	display: inline-flex;
+	direction: rtl;
+	margin-bottom: 35px;
+}
+.teacherfilter{
+	text-align: center;
+	border: 1px solid #EEEEEE;
+    border-radius: 5px;
+    padding: 5px 0px;
+    margin-bottom: 60px;
+	padding-top: 13px;
+}
+.teachers{
+	margin-top: 40px;
+}
+#baner h3{
+	text-align: center;
+}
+#baner h5{
+	text-align: center;
+}
+#baner{
+	margin-bottom: 80px;
+}
+.checkmark{
+	float: right;
+	background-color: #F5F5F5;
+  	border-radius: 50%;
+	height: 26px;
+	width: 26px;
+	margin-top: 21px;
+	margin-right: -13px;
+}
+.contactform input[type=radio]:checked ~ .checkmark {
+	background-color: #391224;
+}
+.contactform input[type=checkbox]:checked ~ .checkmark {
+	background-color: #391224;
+}
+.contactform input[type=checkbox]{
+	float: right;
+    margin-top: 27px;
+    opacity: 0;
+    cursor: pointer;
+    margin-right: 2px;
+}
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+.checkmark input:checked ~ .checkmark:after {
+	display: block;
+}
+.checkmark .checkmark:after {
+	top: 9px;
+   left: 9px;
+   width: 8px;
+   height: 8px;
+   border-radius: 50%;
+   background: white;
+}
+
+  
+  
