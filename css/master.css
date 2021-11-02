@@ -6,7 +6,10 @@ body {
 	background-color: white;
 	margin: 0;
 	font-family: iransans;
-	line-height: 28px;
+	line-height: 40px;
+}
+html{
+	font-size: 15px;
 }
 #header .nav {
 	width: 100%;
@@ -19,13 +22,19 @@ body {
 	color: rgba(128, 128, 128, 0.527);
 	display: block;
 }
-#header .phone>span {
-	padding: 10px;
-	font-size: 12px;
+#header .phone {
+	padding: 0px 20px;
+	font-size: 14px;
+	margin-top: 10px;
+}
+.phone span {
+    font-size: 14px;
+    margin-left: 10px;
 }
 #header .menu {
-	padding: 0;
+	padding: 0px 20px;
 	width: 100%;
+	text-align: right;
 }
 #header .menu ul, li {
 	list-style: none;
@@ -51,7 +60,7 @@ body {
 }
 #header .logo {
 	width: 100%;
-	margin: 10px 0;
+	margin: 25px 0;
 	text-align: center;
 	line-height: 50px;
 	text-transform: capitalize;
@@ -77,6 +86,11 @@ body {
 .login{
 	margin: 29px 0px;
 }
+.login button a{
+	color: inherit;
+	text-decoration: none;
+	padding-left: 10px;
+}
 #header .search label {
 	display: block;
 	float: left;
@@ -92,10 +106,18 @@ body {
 input[type=search]{
 	text-align: right;
     direction: rtl;
-    background-image: url("../images/Group17.png");
+    background-image: url(../images/Group17.png);
     background-repeat: no-repeat;
     border: none;
-    padding: 0px 10px;
+    padding: 0px 9px;
+    background-position-x: 5px;
+    background-position-y: center;
+    background-size: 22px;
+}
+input[type="search"]:focus-visible {
+    border: 1px solid #f0d9aa;
+    outline: none;
+	border-radius: 5px;
 }
 #header .login span :hover {
 	color: rgb(73, 69, 69);
@@ -123,11 +145,14 @@ input[type=search]{
 	position: relative;
 	text-align: center;
 	margin: 30px auto;
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: 300;
 	padding-top: 17px;
 }
-#header .list .listbar>ul li p {
+.listbar li {
+    padding: 0px 20px;
+}
+#header .list .listbar>ul li a {
 	float: left;
 	padding: 0 15px;
 	color: rgba(128, 128, 128, 0.856);
@@ -135,6 +160,7 @@ input[type=search]{
 }
 #header .list .listbar>ul li :hover {
 	color: rgba(68, 64, 64, 0.856);
+	text-decoration: none;
 }
 #header .line {
 	margin: 25px;
@@ -152,6 +178,10 @@ input[type=search]{
 }
 .login img{
 	padding: 10px 15px;
+	width: 52px;
+}
+.login li {
+    padding: 0px 3px;
 }
 #opt{
 	text-align: right;
@@ -196,7 +226,9 @@ input[type=search]{
 	transition: 0.5s;
 }
 .daste .group:hover {
-	box-shadow: 1px 1px 20px 0.2px #3a39398e;
+    box-shadow: 1px 1px 20px 0.2px #ffd700b0;
+    background: transparent;
+    border: 1px solid gold;
 }
 .daste .product {
 	background-color: transparent;
@@ -375,8 +407,23 @@ input[type=search]{
 }
 .ft-tit p {
 	display: block;
-	color: whitesmoke;
+	color: #918183;
 	text-align: center;
+}
+.ft-tit p:hover {
+    color: white;
+    transition: 400ms;
+}
+.ft-tit a {
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: none;
+}
+.ft-tit h4{
+	display: block;
+    text-align: center;
+    color: whitesmoke;
 }
 .ft-tit .gp {
 	padding: 100px;
@@ -390,13 +437,21 @@ input[type=search]{
 	text-align: center;
 }
 .footer .gp {
-	padding: 10px;
-	text-align: center;
-	display: inline;
-	width: 90%;
+	padding: 0px 20px;
+    text-align: center;
+    display: inline;
+    width: 80%;
 }
+.footermenu{
+	margin: 75px 0px;
+}
+.footericons{
+	padding: 0px 15px;
+    padding-left: 35px;
+}
+
 .social{
-    text-align: left;
+    text-align: center;
 }
 .social img {
     margin: 0px 24px;
@@ -406,6 +461,7 @@ input[type=search]{
 }
 .copyrightbar{
 	color: white;
+	margin-top: 70px;
 }
 .new-product-archive {
 	margin: 90px 0;
@@ -470,7 +526,9 @@ input[type=search]{
 	transition: 0.5s;
 }
 .daste-a .group:hover {
-	box-shadow: 1px 1px 20px 0.2px #3a39398e;
+	box-shadow: 1px 1px 20px 0.2px #ffd700b0;
+    background: transparent;
+    border: 1px solid gold;
 }
 .daste-a .product {
 	background-color: transparent;
@@ -487,11 +545,16 @@ input[type=search]{
 .goalvec{
 	display: inline-flex;
 	direction: rtl;
+	margin-top: 30px;
 }
 .goalvec p{
 	margin-top: auto;
 	margin-bottom: auto;
 	margin-right: 10px;
+	font-size: 15px;
+}
+.goalvec img {
+    width: 18%;
 }
 .ourvals h3{
 	text-align: center;
@@ -507,6 +570,7 @@ input[type=search]{
 	text-align: center;
 	direction: rtl;
 	float: right;
+	margin: 0px 75px;
 }
 .contactform label{
 	text-align: right;
@@ -519,6 +583,7 @@ input[type=search]{
 	padding: 15px 5px;
 	float: right;
 	margin-top: 25px;
+	margin-right: 20px;
 }
 .contactform input[type=email]{
 	background: #F5F5F5;
@@ -526,6 +591,8 @@ input[type=search]{
 	border: none;
 	padding: 15px 5px;
 	float: right;
+	margin-top: 25px;
+	margin-right: 20px;
 } 
 .contactform input[type=submit] {
     background: linear-gradient(256.53deg, #FFD700 -5.35%, #EDC800 110.04%);
@@ -539,6 +606,7 @@ input[type=search]{
 	float: right;
 	margin-top: 27px;
 	opacity: 0;
+	margin-right: 20px;
 }
 .contactform label{
 	float: right;
@@ -560,6 +628,10 @@ input[type=search]{
 	direction: rtl;
 	margin-bottom: 35px;
 }
+.teacher img{
+	height: 100%;
+	margin-right: 20px;
+}
 .teacherfilter{
 	text-align: center;
 	border: 1px solid #EEEEEE;
@@ -570,11 +642,12 @@ input[type=search]{
 }
 .teachers{
 	margin-top: 40px;
+	margin-left: 10px;
 }
-#baner h3{
+#baner h4{
 	text-align: center;
 }
-#baner h5{
+#baner h2{
 	text-align: center;
 }
 #baner{
@@ -600,7 +673,7 @@ input[type=search]{
     margin-top: 27px;
     opacity: 0;
     cursor: pointer;
-    margin-right: 2px;
+    margin-right: 20px;
 }
 .checkmark:after {
 	content: "";
@@ -618,6 +691,12 @@ input[type=search]{
    border-radius: 50%;
    background: white;
 }
-
+.formcont{
+	background-image: url("../images/WhatsApp1.png");
+	background-repeat: no-repeat;
+	background-position-x: right;
+	padding-top: 90px;
+	padding-bottom: 100px;
+}
   
   
