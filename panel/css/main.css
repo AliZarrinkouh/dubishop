@@ -76,6 +76,38 @@ border-radius: 5px;
 .notifs{
   margin-top: 23px;
   margin-left: 50px;
+  margin-right: -100px;
+}
+.notifications{
+  direction: rtl;
+  border: 2px solid #eeeeee;
+  background: white;
+  z-index: 2;
+  position:absolute;
+}
+.notifications p{
+  padding: 3px 15px;
+}
+.notifications a{
+  display: inline-flex;
+  padding: 15px;
+}
+.notifications a>img{
+  height: 100%;
+  background-color: rgba(255, 193, 0, 0.5);
+  padding: 15px;
+  border-radius: 5px;
+}
+hr{
+  height: 2px;
+}
+.notifdets{
+  line-height: 10px;
+  text-align: right;
+  padding-right: 10px;
+}
+.notifdets p{
+  display: inline;
 }
 .teachername{
   margin-top: 5px;

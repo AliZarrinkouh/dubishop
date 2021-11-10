@@ -273,7 +273,7 @@ input[type="search"]:focus-visible {
 	margin-bottom: 90px;
 }
 .slider-1 .slide {
-	display: block;
+	display: inline-block;
 	text-align: center;
 	margin: 10px auto;
 	position: relative;

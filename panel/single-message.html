@@ -28,8 +28,27 @@
                     <a href=""><img src="../images/Arrow-Right-2.png" alt=""></a>
                 </div>
                 </div>
-                <div class="notifs">
+                <div class="notifs" id="notifs" onmouseover="shownotifs()" onmouseout="hidenotifs()">
                   <img src="../images/ring.png" alt="">
+                  <div class="notifications" id="notifications" style="display: none;">
+                    <p>اعلان جدید</p>
+                    <a href="">
+                      <img src="../images/More-Circle.png" alt="">
+                      <div class="notifdets">
+                        <h6>پیام پشتیبانی<br></h6>
+                        <p><br>1/7/94</p>
+                      </div>
+                    </a>
+                    <hr>
+                    <p>اعلان‌های بسته شده</p>
+                    <a href="">
+                      <img src="../images/More-Circle.png" alt="">
+                      <div class="notifdets">
+                        <h6>پیام پشتیبانی<br></h6>
+                        <p><br>1/7/94</p>
+                      </div>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -78,11 +97,11 @@
           <div class="panelmenu">
             <ul>
               <li>
-                <a href=""><img src="../images/Home.png" alt="">خانه</a>
+                <a href="" onmouseover="mousehover1()" onmouseout="mouseunhover1()"><img src="../images/Home.png" alt="" id="image">خانه</a>
               </li>
               <li>
                 
-                <a href=""><img src="../images/Paper.png" alt="">لیست خرید</a>
+                <a href="" onmouseover="mousehover2()" onmouseout="mouseunhover2()"><img src="../images/Paper.png" alt="" id="image2">لیست خرید</a>
               </li>
               <li>
                 <a href=""><img src="../images/Paper-Upload.png" alt="">لیست خرید آینده</a>
