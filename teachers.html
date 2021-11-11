@@ -8,6 +8,8 @@
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/master.css" rel="stylesheet">
+	<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 </head>
 <body>
 	<header id="header">
@@ -113,16 +115,53 @@
         <h4>برای مشاهده مدرسینی که با هر کدام از برند های زیر کار میکنند ، ابتدا روی برند کلیک کنید تا انتخاب شود، سپس میتوانید مدرس مورد نظر را مشاهده کنید</h4>
             <div class="container">
                 <div class="row">
-                    <div class="lg">
-                        <div class="col-md-12 col-sm-12">
-                            <img alt="" src="images/Mask%20Group.png"> 
-                            <img alt="" src="images/Mask%20Group%20(1).png">
-                            <img alt="" src="images/Mask%20Group%20(2).png">
-                            <img alt="" src="images/Mask%20Group%20(3).png">
-                            <img alt="" src="images/Mask%20Group%20(4).png">
-                            </div>
-                    </div>
+						<div class="lg">
+							<div class="owl-carousel owl-theme">
+								<div class="col-md-5ths">
+									<img alt="" src="images/Mask%20Group.png">
+								</div> 
+								<div class="col-md-5ths">
+									<img alt="" src="images/Mask%20Group%20(1).png">
+								</div>
+								<div class="col-md-5ths">
+									<img alt="" src="images/Mask%20Group%20(2).png">
+								</div>								
+								<div class="col-md-5ths">
+									<img alt="" src="images/Mask%20Group%20(3).png">
+								</div>
+								<div class="col-md-5ths">
+									<img alt="" src="images/Mask%20Group%20(4).png">
+								</div>
+						</div>
+					</div>
                 </div>
+				<script src="jquery-3.5.1.min.js"></script>
+							<script src="index.js"></script>							
+							<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+							<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" ></script>
+			
+			<script>
+				$(".owl-carousel").owlCarousel({
+				   autoplay:true,
+				   items:5,
+				   loop:true,
+				   autoplayHoverPause:true,
+				   margin:60,
+				   nav:true,
+				   responsive:{
+					   480:{
+						   items:1,
+					   },
+					   768:{
+						   items:2,
+					   },
+					   900:{
+						   items:5,
+					   }
+				   }
+				   }
+				);
+			   </script>
             </div>
         </section>
         <div class="teachers">

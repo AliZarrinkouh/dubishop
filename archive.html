@@ -8,6 +8,8 @@
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/master.css" rel="stylesheet">
+	<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 </head>
 <body>
 	<header id="header">
@@ -121,52 +123,80 @@
                 <div class="line"></div>
             </div>
 			<div class="slider-1">
-                <h3>دارای <b>تخفیف</b></h3>
-				<div class="container-fuild">
-					<div class="row">
-						<div class="col-md-3 col-sm-12">
+				<div class="container">
+					<div class="owl-carousel owl-theme">
+						<div class="col-md-3 col-sm-12"> 
 							<div class="slide">
 								<img class="heart" src="images/119900674-removebg-preview%202.png">
 								<div class="t-slide">
-									<h4 class="title"><span style="background: #C93A3A; padding: 5px; font-size: 13px; color: white; margin-right: 10px; border-radius: 15px;">50%</span>رژلب برند الیزا</h4>
+									<h4 class="title">رژلب برند الیزا</h4>
 									<p class="brand-name">برند: الیزا</p>
 									<h4>تومان 100.000</h4>
 								</div>
-							</div>
+							</div>					
+						</div>
+						<div class="col-md-3 col-sm-12"> 
+							<div class="slide">
+								<img class="heart" src="images/119900674-removebg-preview%202.png">
+								<div class="t-slide">
+									<h4 class="title">رژلب برند الیزا</h4>
+									<p class="brand-name">برند: الیزا</p>
+									<h4>تومان 100.000</h4>
+								</div>
+							</div>					
+						</div>
+						<div class="col-md-3 col-sm-12"> 
+							<div class="slide">
+								<img class="heart" src="images/119900674-removebg-preview%202.png">
+								<div class="t-slide">
+									<h4 class="title">رژلب برند الیزا</h4>
+									<p class="brand-name">برند: الیزا</p>
+									<h4>تومان 100.000</h4>
+								</div>
+							</div>					
 						</div>
 						<div class="col-md-3 col-sm-12">
 							<div class="slide">
 								<img class="heart" src="images/119900674-removebg-preview%202.png">
 								<div class="t-slide">
-									<h4 class="title"><span style="background: #C93A3A; padding: 5px; font-size: 13px; color: white; margin-right: 10px; border-radius: 15px;">50%</span>رژلب برند الیزا</h4>
+									<h4 class="title">رژلب برند الیزا</h4>
 									<p class="brand-name">برند: الیزا</p>
 									<h4>تومان 100.000</h4>
 								</div>
 							</div>
 						</div>
-						<div class="col-md-3 col-sm-12">
-							<div class="slide">
-								<img class="heart" src="images/119900674-removebg-preview%202.png">
-								<div class="t-slide">
-									<h4 class="title"><span style="background: #C93A3A; padding: 5px; font-size: 13px; color: white; margin-right: 10px; border-radius: 15px;">50%</span>رژلب برند الیزا</h4>
-									<p class="brand-name">برند: الیزا</p>
-									<h4>تومان 100.000</h4>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-12">
-							<div class="slide">
-								<img class="heart" src="images/119900674-removebg-preview%202.png">
-								<div class="t-slide">
-									<h4 class="title"><span style="background: #C93A3A; padding: 5px; font-size: 13px; color: white; margin-right: 10px; border-radius: 15px;">50%</span>رژلب برند الیزا</h4>
-									<p class="brand-name">برند: الیزا</p>
-									<h4>تومان 100.000</h4>
-								</div>
-							</div>
-						</div>
-					</div>
+				</div>			  
 				</div>
-			</div>
+				<script src="jquery-3.5.1.min.js"></script>
+							<script src="index.js"></script>							
+							<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+							<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" ></script>
+			
+			<script>
+				$(".owl-carousel").owlCarousel({
+				   autoplay:true,
+				   items:4,
+				   loop:true,
+				   autoplayHoverPause:true,
+				   margin:60,
+				   nav:true,
+				   responsive:{
+					   480:{
+						   items:1,
+					   },
+					   768:{
+						   items:2,
+					   },
+					   900:{
+						   items:4,
+					   }
+				   }
+				   }
+				);
+			   </script>
+							 
+			<div class="slider-2"></div>
+		</div>
             <div class="new-product-2">
 				<div class="col-md-12 col-sm-12">
 					<h3>محصولات <b>آرشیو</b></h3>
