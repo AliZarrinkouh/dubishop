@@ -47,6 +47,41 @@ body {
         float: left;
     }
 }
+.col-xs-8ths,
+.col-sm-8ths,
+.col-md-8ths,
+.col-lg-8ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-8ths {
+    width: 12.5% !important;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-8ths {
+        width: 12.5% !important;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-8ths {
+        width: 12.5% !important;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-8ths {
+        width: 12.5% !important;
+        float: left;
+    }
+}
 article,
 aside,
 details,

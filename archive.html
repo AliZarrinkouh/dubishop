@@ -20,6 +20,54 @@
                         <img src="images/Call.png" alt=""><span>0912-1212-111</span>
 					</div>
 				</div>
+				<span class="humburger-menu" onclick="openNav()">☰</span>
+				<div id="mySidenav" class="sidenav" style="display: none;">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+					<div class="logo"><img src="images/logo.png"></div>
+					<h4>دسته‌بندی محصولات</h4>
+					<div>
+						<ul>
+							<li>
+								<a href="">آرایش صورت</a>
+							</li>
+							<li>
+								<a href="">چشم و ابرو</a>
+							</li>
+							<li>
+								<a href="">گونه و لب</a>
+							</li>
+							<li>
+								<a href="">بدن</a>
+							</li>
+							<li>
+								<a href="">براش و اسفنج</a>
+							</li>
+							<li>
+								<a href="">اکسسوری و کیف</a>
+							</li>
+						</ul>
+					</div>
+					<h4>لینک‌های مفید</h4>
+					<div>
+						<ul>
+							<li>
+								<a href="">باشگاه مشتریان</a>
+							</li>
+							<li>
+								<a href="">آکادمی</a>
+							</li>
+							<li>
+								<a href="">بلاگ</a>
+							</li>
+							<li>
+								<a href="">تماس باما</a>
+							</li>
+							<li>
+								<a href="">درباره ما</a>
+							</li>
+						</ul>
+					</div>
+				  </div>
 				<div class="col-md-6 col-sm-12">
 					<div class="menu">
 						<ul>
@@ -50,7 +98,32 @@
 						<ul>
 							<li><button><img src="images/Profile.png"><a>حساب کاربری</a></button></li>
 							<li><a href=""><img src="images/Stroke-15.png" alt=""></a></li>
-							<li><a href=""><img src="images/Bag.png" alt=""></a></li>
+							<li id="shophov" onmouseover="openshop()" onmouseout="closeshop()">
+								<a href=""><img src="images/Bag.png" alt=""></a>
+								<div class="shopbag" id="shopbag" style="display: none;">
+									<h5><b>کد تخفیف</b></h5>
+									<div class="listbuy">
+										<a href="">
+											<img src="images/119900674-removebg-preview 2.png" alt="">
+											<p>4 عدد</p>
+											<h6>محصول تستی</h6>
+										</a>
+										<a href="" class="editlist"><img src="images/Edit.png" alt=""></a>
+									</div>
+									<div class="listbuy">
+										<a href="">
+											<img src="images/119900674-removebg-preview 2.png" alt="">
+											<p>4 عدد</p>
+											<h6>محصول تستی</h6>
+										</a>
+										<a href="" class="editlist"><img src="images/Edit.png" alt=""></a>
+									</div>
+									<div class="bagbtns">
+										<p class="itemnum">24 آیتم</p>
+										<a href="" class="paybag">پرداخت</a>
+									</div>
+								</div>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -59,7 +132,8 @@
 				</div>
 				<div class="col-md-4">
 					<div class="search">
-						<input type="search" name="" id="" placeholder="جستجو بین محصولات...">
+						<form action="">
+						<input type="search" name="" id="" placeholder="جستجو بین محصولات..."></form>
 						<button><img src="images/Group 17.png" alt="">...جستجو بین محصولات</button> <select id="opt" name="">
 							<optgroup>
 								<option selected disabled value="">
@@ -126,44 +200,52 @@
 				<div class="container">
 					<div class="owl-carousel owl-theme">
 						<div class="col-md-3 col-sm-12"> 
-							<div class="slide">
-								<img class="heart" src="images/119900674-removebg-preview%202.png">
-								<div class="t-slide">
-									<h4 class="title">رژلب برند الیزا</h4>
-									<p class="brand-name">برند: الیزا</p>
-									<h4>تومان 100.000</h4>
+							<a href="" class="prod">
+								<div class="slide">
+									<img class="heart" src="images/119900674-removebg-preview%202.png">
+									<div class="t-slide">
+										<h4 class="title">رژلب برند الیزا</h4>
+										<p class="brand-name">برند: الیزا</p>
+										<h4>تومان 100.000</h4>
+									</div>
 								</div>
-							</div>					
+							</a>					
 						</div>
 						<div class="col-md-3 col-sm-12"> 
-							<div class="slide">
-								<img class="heart" src="images/119900674-removebg-preview%202.png">
-								<div class="t-slide">
-									<h4 class="title">رژلب برند الیزا</h4>
-									<p class="brand-name">برند: الیزا</p>
-									<h4>تومان 100.000</h4>
+							<a href="" class="prod">
+								<div class="slide">
+									<img class="heart" src="images/119900674-removebg-preview%202.png">
+									<div class="t-slide">
+										<h4 class="title">رژلب برند الیزا</h4>
+										<p class="brand-name">برند: الیزا</p>
+										<h4>تومان 100.000</h4>
+									</div>
 								</div>
-							</div>					
+							</a>							
 						</div>
 						<div class="col-md-3 col-sm-12"> 
-							<div class="slide">
-								<img class="heart" src="images/119900674-removebg-preview%202.png">
-								<div class="t-slide">
-									<h4 class="title">رژلب برند الیزا</h4>
-									<p class="brand-name">برند: الیزا</p>
-									<h4>تومان 100.000</h4>
+							<a href="" class="prod">
+								<div class="slide">
+									<img class="heart" src="images/119900674-removebg-preview%202.png">
+									<div class="t-slide">
+										<h4 class="title">رژلب برند الیزا</h4>
+										<p class="brand-name">برند: الیزا</p>
+										<h4>تومان 100.000</h4>
+									</div>
 								</div>
-							</div>					
+							</a>						
 						</div>
 						<div class="col-md-3 col-sm-12">
-							<div class="slide">
-								<img class="heart" src="images/119900674-removebg-preview%202.png">
-								<div class="t-slide">
-									<h4 class="title">رژلب برند الیزا</h4>
-									<p class="brand-name">برند: الیزا</p>
-									<h4>تومان 100.000</h4>
+							<a href="" class="prod">
+								<div class="slide">
+									<img class="heart" src="images/119900674-removebg-preview%202.png">
+									<div class="t-slide">
+										<h4 class="title">رژلب برند الیزا</h4>
+										<p class="brand-name">برند: الیزا</p>
+										<h4>تومان 100.000</h4>
+									</div>
 								</div>
-							</div>
+							</a>			
 						</div>
 				</div>			  
 				</div>
@@ -174,28 +256,31 @@
 			
 			<script>
 				$(".owl-carousel").owlCarousel({
-				   autoplay:true,
+				   autoplay:false,
 				   items:4,
 				   loop:true,
 				   autoplayHoverPause:true,
-				   margin:60,
 				   nav:true,
+				   center:true,
 				   responsive:{
-					   480:{
-						   items:1,
+					   0:{
+					    items:1,
+						
+						center:true,
+						margin:150,
+						stagepadding:50,
 					   },
 					   768:{
 						   items:2,
 					   },
 					   900:{
-						   items:4,
+						   items:3,
 					   }
 				   }
 				   }
 				);
 			   </script>
 							 
-			<div class="slider-2"></div>
 		</div>
             <div class="new-product-2">
 				<div class="col-md-12 col-sm-12">
@@ -205,45 +290,53 @@
 			<div class="slider-1">
 				<div class="container-fuild">
 					<div class="row">
-						<div class="col-md-3 col-sm-12">
-							<div class="slide">
-								<img class="heart" src="images/119900674-removebg-preview%202.png">
-								<div class="t-slide">
-									<h4 class="title">رژلب برند الیزا</h4>
-									<p class="brand-name">برند: الیزا</p>
-									<h4>تومان 100.000</h4>
+						<div class="col-md-3 col-sm-12"> 
+							<a href="" class="prod">
+								<div class="slide">
+									<img class="heart" src="images/119900674-removebg-preview%202.png">
+									<div class="t-slide">
+										<h4 class="title">رژلب برند الیزا</h4>
+										<p class="brand-name">برند: الیزا</p>
+										<h4>تومان 100.000</h4>
+									</div>
 								</div>
-							</div>
+							</a>					
+						</div>
+						<div class="col-md-3 col-sm-12"> 
+							<a href="" class="prod">
+								<div class="slide">
+									<img class="heart" src="images/119900674-removebg-preview%202.png">
+									<div class="t-slide">
+										<h4 class="title">رژلب برند الیزا</h4>
+										<p class="brand-name">برند: الیزا</p>
+										<h4>تومان 100.000</h4>
+									</div>
+								</div>
+							</a>							
+						</div>
+						<div class="col-md-3 col-sm-12"> 
+							<a href="" class="prod">
+								<div class="slide">
+									<img class="heart" src="images/119900674-removebg-preview%202.png">
+									<div class="t-slide">
+										<h4 class="title">رژلب برند الیزا</h4>
+										<p class="brand-name">برند: الیزا</p>
+										<h4>تومان 100.000</h4>
+									</div>
+								</div>
+							</a>						
 						</div>
 						<div class="col-md-3 col-sm-12">
-							<div class="slide">
-								<img class="heart" src="images/119900674-removebg-preview%202.png">
-								<div class="t-slide">
-									<h4 class="title">رژلب برند الیزا</h4>
-									<p class="brand-name">برند: الیزا</p>
-									<h4>تومان 100.000</h4>
+							<a href="" class="prod">
+								<div class="slide">
+									<img class="heart" src="images/119900674-removebg-preview%202.png">
+									<div class="t-slide">
+										<h4 class="title">رژلب برند الیزا</h4>
+										<p class="brand-name">برند: الیزا</p>
+										<h4>تومان 100.000</h4>
+									</div>
 								</div>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-12">
-							<div class="slide">
-								<img class="heart" src="images/119900674-removebg-preview%202.png">
-								<div class="t-slide">
-									<h4 class="title">رژلب برند الیزا</h4>
-									<p class="brand-name">برند: الیزا</p>
-									<h4>تومان 100.000</h4>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-12">
-							<div class="slide">
-								<img class="heart" src="images/119900674-removebg-preview%202.png">
-								<div class="t-slide">
-									<h4 class="title">رژلب برند الیزا</h4>
-									<p class="brand-name">برند: الیزا</p>
-									<h4>تومان 100.000</h4>
-								</div>
-							</div>
+							</a>			
 						</div>
 					</div>
 				</div>
@@ -251,45 +344,53 @@
             <div class="slider-1">
 				<div class="container-fuild">
 					<div class="row">
-						<div class="col-md-3 col-sm-12">
-							<div class="slide">
-								<img class="heart" src="images/119900674-removebg-preview%202.png">
-								<div class="t-slide">
-									<h4 class="title">رژلب برند الیزا</h4>
-									<p class="brand-name">برند: الیزا</p>
-									<h4>تومان 100.000</h4>
+						<div class="col-md-3 col-sm-12"> 
+							<a href="" class="prod">
+								<div class="slide">
+									<img class="heart" src="images/119900674-removebg-preview%202.png">
+									<div class="t-slide">
+										<h4 class="title">رژلب برند الیزا</h4>
+										<p class="brand-name">برند: الیزا</p>
+										<h4>تومان 100.000</h4>
+									</div>
 								</div>
-							</div>
+							</a>					
+						</div>
+						<div class="col-md-3 col-sm-12"> 
+							<a href="" class="prod">
+								<div class="slide">
+									<img class="heart" src="images/119900674-removebg-preview%202.png">
+									<div class="t-slide">
+										<h4 class="title">رژلب برند الیزا</h4>
+										<p class="brand-name">برند: الیزا</p>
+										<h4>تومان 100.000</h4>
+									</div>
+								</div>
+							</a>							
+						</div>
+						<div class="col-md-3 col-sm-12"> 
+							<a href="" class="prod">
+								<div class="slide">
+									<img class="heart" src="images/119900674-removebg-preview%202.png">
+									<div class="t-slide">
+										<h4 class="title">رژلب برند الیزا</h4>
+										<p class="brand-name">برند: الیزا</p>
+										<h4>تومان 100.000</h4>
+									</div>
+								</div>
+							</a>						
 						</div>
 						<div class="col-md-3 col-sm-12">
-							<div class="slide">
-								<img class="heart" src="images/119900674-removebg-preview%202.png">
-								<div class="t-slide">
-									<h4 class="title">رژلب برند الیزا</h4>
-									<p class="brand-name">برند: الیزا</p>
-									<h4>تومان 100.000</h4>
+							<a href="" class="prod">
+								<div class="slide">
+									<img class="heart" src="images/119900674-removebg-preview%202.png">
+									<div class="t-slide">
+										<h4 class="title">رژلب برند الیزا</h4>
+										<p class="brand-name">برند: الیزا</p>
+										<h4>تومان 100.000</h4>
+									</div>
 								</div>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-12">
-							<div class="slide">
-								<img class="heart" src="images/119900674-removebg-preview%202.png">
-								<div class="t-slide">
-									<h4 class="title">رژلب برند الیزا</h4>
-									<p class="brand-name">برند: الیزا</p>
-									<h4>تومان 100.000</h4>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-12">
-							<div class="slide">
-								<img class="heart" src="images/119900674-removebg-preview%202.png">
-								<div class="t-slide">
-									<h4 class="title">رژلب برند الیزا</h4>
-									<p class="brand-name">برند: الیزا</p>
-									<h4>تومان 100.000</h4>
-								</div>
-							</div>
+							</a>			
 						</div>
 					</div>
 				</div>
@@ -418,5 +519,6 @@
 	</script> 
 	<script src="js/bootstrap.js">
 	</script>
+		<script src="js/main.js"></script>
 </body>
 </html>

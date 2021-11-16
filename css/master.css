@@ -11,6 +11,13 @@ body {
 html{
 	font-size: 15px;
 }
+a{
+	text-decoration: none;
+	color: inherit;
+}
+a:hover{
+	color: inherit;
+}
 #header .nav {
 	width: 100%;
 	padding: 7px 0;
@@ -91,14 +98,63 @@ html{
 	text-decoration: none;
 	padding-left: 10px;
 }
-/*.shopbag{
+.shopbag{
 	position: absolute;
 	margin-top: 40px;
 	margin-left: 25px;
 	border: 2px solid #eee;
 	border-radius: 5px;
-	width: 40%;
-}*/
+	width: 50%;
+	z-index: 2;
+	background-color: white;
+}
+.shopbag h5 {
+    padding-right: 10px;
+}
+.listbuy {
+    display: inline-flex;
+    direction: rtl;
+}
+.listbuy a {
+    display: inline-flex;
+    direction: rtl;
+	text-decoration: none;
+}
+.listbuy a img {
+    height: 100%;
+}
+.listbuy p {
+    line-height: normal;
+    margin-top: 10px;
+}
+.editlist img {
+    height: 46px !important;
+}
+.listbuy h6 {
+    margin-right: 5px;
+}
+.listbuy p {
+    line-height: 12px;
+    margin-top: 23px;
+    margin-left: 5px;
+}
+.bagbtns {
+    display: inline-flex;
+    direction: rtl;
+    margin-right: 20px;
+}
+.paybag {
+    padding: 2px 13px;
+    background-color: #391224;
+    color: white;
+    border-radius: 5px;
+    margin-right: 11px;
+    margin-bottom: 10px;
+}
+.paybag:hover{
+	text-decoration: none;
+	color: white;
+}
 #header .search label {
 	display: block;
 	float: left;
@@ -121,6 +177,7 @@ input[type=search]{
     background-position-x: 5px;
     background-position-y: center;
     background-size: 22px;
+	margin: 0px 15px;
 }
 input[type="search"]:focus-visible {
     border: 1px solid #f0d9aa;
@@ -193,7 +250,13 @@ input[type="search"]:focus-visible {
 }
 #opt{
 	text-align: right;
-	border: none;
+	border: 1px solid white;
+	background-color: white;
+	outline: none;
+}
+#opt optgroup{
+	text-align: right;
+	direction: rtl;
 }
 .text {
 	text-align: right;
@@ -254,6 +317,7 @@ input[type="search"]:focus-visible {
 	border-radius: 5px;
 	box-shadow: 1px 1px 20px 0.2px rgba(7, 7, 7, 0.32);
 	/*transition: 1s;*/
+	display: flow-root;
 }
 .d-product ul li {
 	display: inline-flex;
@@ -290,7 +354,7 @@ input[type="search"]:focus-visible {
 	transition: 0.5s;
 }
 .slider-1 .slide:hover {
-	box-shadow: 1px 1px 30px 1px rgba(15, 14, 15, 0.31);
+	color: #ff0000ab;
 }
 .slider-1 .slide .heart {
 	background: whitesmoke;
@@ -712,5 +776,170 @@ input[type="search"]:focus-visible {
 .owl-dots{
 	display: none;
 }
-  
+.prod {
+    text-align: center;
+    display: block;
+}
+@media only screen and (max-width:600px) {
+	#header .phone {
+		width: 60%;
+	}
+	.menu{
+		display: none;
+	}
+	.login li{
+		padding: 0px;
+	}
+	input[type="search"]{
+		margin: 0px;
+		padding: 0px;
+	}
+	.listbar ul{
+		display: none;
+	}
+	.btn img{
+		padding: 5px;
+	}
+	.btn{
+		overflow: auto;
+		width: 100%;
+	}
+	.new-product-archive h3{
+		text-align: center;
+	}
+	.owl-item{
+		text-align: center;
+	}
+	.footericons{
+		display: none;
+	}
+	.text {
+		text-align: justify;
+		width: 100%;
+		margin: 0;
+		padding: 0 0px;
+		text-align-last: center;
+	}
+	.daste{
+		text-align: center;
+	}
+	.daste .group{
+		margin-top: 20px;
+	}
+	.footer .gp{
+		display: block;
+		margin:0px auto;
+	}
+	.new-product h3 {
+		text-align: center;
+	}
+	.teacher{
+		display: block;
+		text-align: center;
+	}
+	.teacher img{
+		margin-right: 0px;
+	}
+	#baner h4 {
+		text-align: justify;
+		padding-bottom: 20px;
+		text-align-last: center;
+	}
+	.formcont{
+		background-image: none;
+	}
+	.contactform input[type="radio"]{
+		margin-right:10px ;
+	}
+	.contactform label {
+		float: right;
+		margin-top: 16px;
+	}
+	.iconbox {
+		margin-left: -25px;
+	}
+}
+@media only screen and (max-width:990px){
+	.d-product {
+		display: inline-block;
+	}
+	.menu{
+		display: none;
+	}
+	.login li{
+		padding: 0px;
+	}
+	.listbar ul{
+		display: none;
+	}
+}
+.humburger-menu{display:none}
+#mySidenav{
+  display:none;
+}
+@media screen and (max-width:990px){
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav ul {
+  background: white;
+  text-align: right;
+  direction: rtl;
+  margin-right: -1.4rem;
+}
+.sidenav li {
+  background: white;
+  display: flex;
+  padding: 5px;
+}
+.sidenav li p {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    text-align: right;
+}
+.sidenav li i {
+  padding: 10px;
+  font-size: 16px;
+}
+.sidenav {
+  height: 100%;
+  position: fixed;
+  margin-right: 10px;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align: right;
+  width: 0px;
+  box-shadow: 0px 0px 50px #0000008a;
+}
+.sidenav h4{
+	text-align: center;
+	padding-top: 15px;
+}
+.humburger-menu {
+    display: block;
+    font-size: 40px;
+    cursor: pointer;
+    position: absolute;
+    text-align: right;
+    top: 20px;
+    right: 20px;
+}
+}
   
