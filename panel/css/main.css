@@ -45,6 +45,7 @@ input[type="search"] {
   background-color: #e5e5e5;
   margin-right: 15px;
   margin-top: 11px;
+  width: 40%;
 }
 .shoplisthead {
   display: flex;
@@ -216,12 +217,20 @@ hr{
   text-align: center;
   margin-top: 100px;
   margin-bottom: 70px;
+  display: inline-flex;
+  width: 100%;
 }
 .latestlist .row {
   margin: 50px 0px;
 }
 .footcol2 {
   border-right: 2px solid #C4C4C4;
+  padding-right: 15px;
+  width: 50%;
+}
+.footcol1{
+  padding-left: 15px;
+  width: 50%;
 }
 .teachername a {
   padding-right: 13px;
@@ -278,6 +287,41 @@ hr {
   border-top: 1px solid #ccc;
   margin: 1em 0;
   padding: 0;
+}
+.shoplis{
+  direction: rtl;
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+}
+.pictureplace{
+  border-radius: 0px 5px 5px 0px;
+  border-left: 2px solid rgba(116, 104, 104, 0.52);
+  padding: 24px;
+}
+.lastone{
+  border-radius: 5px 0px 0px 5px;
+  padding-left: 15px !important;
+}
+.shoplis th{
+  background-color: white;
+  width: 20%;
+  padding: 20px 13px;
+}
+.shoplis p {
+  text-decoration: line-through;
+  font-size: smaller;
+}
+.pictureplace img{
+  width: 31px;
+}
+.shopholder{
+  direction: rtl;
+display: block;
+margin-right: auto;
+margin-left: auto;
+overflow-y: hidden;
+overflow-x: auto;
 }
 
 /*
@@ -358,7 +402,107 @@ textarea {
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
+@media only screen and (max-width:768px){
+  .panel-side{
+    display: none;
+  }
+  .userpart{
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+  .notifs{
+    margin-left: 0;
+  margin-right: 5px;
+  margin-top: -15px;
+  }
+  .userdet{
+    position: relative;
+  left: -20px;
+  bottom: 20px;
+  }
+    .notifications {
+      right: 10px;
+  }
+  input[type="search"]{
+    margin-right: 45px;
+    margin-top: 39px;
+  }
+  .pagetitle {
+    text-align: right;
+    margin-top: 23px;
+    margin-right: 0px;
+}
+}
 
+.humburger-menu{display:none}
+#mySidenav{
+  display:none;
+}
+@media screen and (max-width:990px){
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav ul {
+  background: white;
+  text-align: right;
+  direction: rtl;
+  margin-right: -1.4rem;
+}
+.sidenav li {
+  background: white;
+  display: flex;
+  padding: 5px;
+}
+.sidenav li p {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    text-align: right;
+}
+.sidenav li i {
+  padding: 10px;
+  font-size: 16px;
+}
+.sidenav {
+  height: 100%;
+  position: fixed;
+  margin-right: 10px;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align: right;
+  width: 0px;
+  box-shadow: 0px 0px 50px #0000008a;
+}
+.sidenav h4{
+	text-align: center;
+	padding-top: 15px;
+}
+.humburger-menu {
+    display: block;
+    font-size: 40px;
+    cursor: pointer;
+    position: absolute;
+    text-align: right;
+    top: 20px;
+    right: 20px;
+}
+}
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
