@@ -15,6 +15,19 @@ var image = document.getElementById("image");
   function mouseunhover2(){
     document.getElementById("image2").src = "../images/paper.png";
     }
+    function mousehover11(){
+      document.getElementById("image11").src = "../images/homeyel.png";
+    }
+    function mouseunhover11(){
+      document.getElementById("image11").src = "../images/home.png";
+      }
+      function mousehover22(){
+      document.getElementById("image22").src = "../images/paperyel.png";
+    }
+    function mouseunhover22(){
+      document.getElementById("image22").src = "../images/paper.png";
+      }
+
 //charts
 Chart.defaults.global.defaultFontFamily ='iransans',
         new Chart(document.getElementById("bar-chart"), {
@@ -145,7 +158,7 @@ Chart.defaults.global.defaultFontFamily ='iransans',
             }
         }
         function openNav() {
-          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("mySidenav").style.width = "85%";
           document.getElementById("mySidenav").style.display= "block"; 
         }
         

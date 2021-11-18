@@ -167,6 +167,9 @@ a:hover{
 	color: rgba(128, 128, 128, 0.37);
 	text-align: right;
 }
+.search form{
+	margin-left: -4px;
+}
 input[type=search]{
 	text-align: right;
     direction: rtl;
@@ -260,7 +263,7 @@ input[type="search"]:focus-visible {
 }
 .text {
 	text-align: right;
-	width: 100%;
+	width: 91%;
 	margin: 60px;
 	padding: 0 95px;
 }
@@ -287,6 +290,7 @@ input[type="search"]:focus-visible {
 	padding: 0 20px;
 	font-size: 17px;
 	font-weight: bolder;
+	width: 97%;
 }
 .daste .group {
 	margin: 0 20px;
@@ -318,6 +322,9 @@ input[type="search"]:focus-visible {
 	box-shadow: 1px 1px 20px 0.2px rgba(7, 7, 7, 0.32);
 	/*transition: 1s;*/
 	display: flow-root;
+}
+.d-product ul{
+	margin-right: 35px;
 }
 .d-product ul li {
 	display: inline-flex;
@@ -411,6 +418,7 @@ input[type="search"]:focus-visible {
 .brand {
 	text-align: right;
 	margin: 50px 0;
+	direction: rtl;
 }
 .brand .sold {
 	font-weight: 900;
@@ -526,7 +534,7 @@ input[type="search"]:focus-visible {
     text-align: center;
 }
 .social img {
-    margin: 0px 24px;
+    margin: 0px 8px;
 }
 .copytext{
 	text-align: left;
@@ -589,6 +597,14 @@ input[type="search"]:focus-visible {
 	font-weight: bolder;
 	padding-top: 40px;
 }
+.daste-a a{
+	text-decoration: none;
+	color: inherit;
+}
+.daste-a a:hover{
+	text-decoration: none;
+	color: inherit;
+}
 .daste-a .group {
 	margin: 0 20px;
 	background-color: gold;
@@ -634,6 +650,7 @@ input[type="search"]:focus-visible {
 .ourvals{
 	text-align: center;
 	padding: 100px;
+	direction: rtl;
 }
 .ourvals p{
 	text-align: center;
@@ -694,6 +711,11 @@ input[type="search"]:focus-visible {
 .teachersleveltitle{
 	text-align: right;
 	direction: rtl;
+}
+.teacherbio {
+    text-align: justify;
+    text-align-last: right;
+    direction: rtl;
 }
 .teacher{
 	display: inline-flex;
@@ -780,9 +802,17 @@ input[type="search"]:focus-visible {
     text-align: center;
     display: block;
 }
+@media only screen and (max-width:1258px) {
+	.footericons{
+		display: none;
+	}
+}
 @media only screen and (max-width:600px) {
 	#header .phone {
 		width: 60%;
+	}
+	#header .menu ul, li {
+		margin: -3px;
 	}
 	.menu{
 		display: none;
@@ -858,6 +888,12 @@ input[type="search"]:focus-visible {
 	.iconbox {
 		margin-left: -25px;
 	}
+	.copytext {
+		text-align: center;
+	}
+	.d-product ul {
+		margin-right: 12px;
+	}
 }
 @media only screen and (max-width:990px){
 	.d-product {
@@ -878,6 +914,16 @@ input[type="search"]:focus-visible {
   display:none;
 }
 @media screen and (max-width:990px){
+.about-head{
+	background: none;
+}	
+.footer .gp {
+    width: 50%;
+	text-align: center;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
 .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -917,7 +963,7 @@ input[type="search"]:focus-visible {
   height: 100%;
   position: fixed;
   margin-right: 10px;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   right: 0;
   background-color: white;

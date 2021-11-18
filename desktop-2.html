@@ -364,7 +364,7 @@
 						   items:2,
 					   },
 					   900:{
-						   items:3,
+						   items:4,
 					   }
 				   }
 				   }
@@ -377,8 +377,8 @@
 		<div class="container-fuild">
 			<div class="col-md-12 col-sm-12">
 				<div class="n-produc">
-					<button class="next"><img alt="" class="str-22" src="images/Stroke-3.png"></button>
-					<h4 class="sold"><b>تخفیف دار</b> محصولات</h4><button class="next"><img alt="" class="str-2" src="images/Stroke-3.png"></button>
+					<button class="next owl-prev disabled" type="button" role="presentation"><img alt="" class="str-22" src="images/Stroke-3.png"></button>
+					<h4 class="sold"><b>تخفیف دار</b> محصولات</h4><button type="button" role="presentation" class="next owl-next disabled"><img alt="" class="str-2" src="images/Stroke-3.png"></button>
 				</div>
 			</div>
 		</div>
@@ -408,6 +408,8 @@
 		<script>
   				$(document).ready(function() {
       $(".owl-carousel3").owlCarousel({
+		  nav:true,
+		  navtext:["<button class='next'><img class='str-22' src='images/Stroke-3.png'></button>, <button class='next'><img class='str-2' src='images/Stroke-3.png'></button>"],
 		items:1,
 		loop:($(".owl-carousel .item").length > 1) ? true: false,
       	itemsDesktop : false,
@@ -435,107 +437,291 @@
 			<div class="new-product">
 				<div class="col-md-6 col-sm-12">
 					<div class="btn">
-						<button>🔥پرطرفدار</button> <button>🤑به صرفه</button> <button>😍محبوب</button>
+						<button class="tablinks" onclick="openCity(event, 'London')">🔥پرطرفدار</button>
+						<button class="tablinks" onclick="openCity(event, 'Paris')">🤑به صرفه</button> 
+						<button class="tablinks" onclick="openCity(event, 'Tokyo')" onload="openfirst()" id="defaultOpen">😍محبوب</button>						  
 					</div>
+					<div id="London" class="tabcontent">
+							<div class="slider-1">
+								<div class="container">
+									<div class="owl-carousel owl-theme">
+										<div class="col-md-3 col-sm-12"> 
+											<a href="" class="prod">
+												<div class="slide">
+													<img class="heart" src="images/119900674-removebg-preview%202.png">
+													<div class="t-slide">
+														<h4 class="title">رژلب برند الیزا</h4>
+														<p class="brand-name">برند: الیزا</p>
+														<h4>تومان 100.000</h4>
+													</div>
+												</div>
+											</a>					
+										</div>
+										<div class="col-md-3 col-sm-12"> 
+											<a href="" class="prod">
+												<div class="slide">
+													<img class="heart" src="images/119900674-removebg-preview%202.png">
+													<div class="t-slide">
+														<h4 class="title">رژلب برند الیزا</h4>
+														<p class="brand-name">برند: الیزا</p>
+														<h4>تومان 100.000</h4>
+													</div>
+												</div>
+											</a>							
+										</div>
+										<div class="col-md-3 col-sm-12"> 
+											<a href="" class="prod">
+												<div class="slide">
+													<img class="heart" src="images/119900674-removebg-preview%202.png">
+													<div class="t-slide">
+														<h4 class="title">رژلب برند الیزا</h4>
+														<p class="brand-name">برند: الیزا</p>
+														<h4>تومان 100.000</h4>
+													</div>
+												</div>
+											</a>						
+										</div>
+										<div class="col-md-3 col-sm-12">
+											<a href="" class="prod">
+												<div class="slide">
+													<img class="heart" src="images/119900674-removebg-preview%202.png">
+													<div class="t-slide">
+														<h4 class="title">رژلب برند الیزا</h4>
+														<p class="brand-name">برند: الیزا</p>
+														<h4>تومان 100.000</h4>
+													</div>
+												</div>
+											</a>			
+										</div>
+								</div>			  
+								</div>
+								<script src="jquery-3.5.1.min.js"></script>
+											<script src="index.js"></script>							
+											<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+											<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" ></script>
+							
+							<script>
+								$(".owl-carousel").owlCarousel({
+								   autoplay:true,
+								   items:1,
+								   loop:true,
+								   autoplayHoverPause:true,
+								   margin:66,
+								   nav:true,
+								   responsive:{
+									   0:{
+										   items:1,
+									   },
+									   768:{
+										   items:2,
+									   },
+									   900:{
+										   items:4,
+									   }
+								   }
+								   }
+								);
+							   </script>
+											 
+							<div class="slider-2"></div>
+						</div>  
+						  </div>
+						  
+						  <div id="Paris" class="tabcontent">
+							<div class="slider-1">
+								<div class="container">
+									<div class="owl-carousel owl-theme">
+										<div class="col-md-3 col-sm-12"> 
+											<a href="" class="prod">
+												<div class="slide">
+													<img class="heart" src="images/119900674-removebg-preview%202.png">
+													<div class="t-slide">
+														<h4 class="title">رژلب برند الیزا</h4>
+														<p class="brand-name">برند: الیزا</p>
+														<h4>تومان 100.000</h4>
+													</div>
+												</div>
+											</a>					
+										</div>
+										<div class="col-md-3 col-sm-12"> 
+											<a href="" class="prod">
+												<div class="slide">
+													<img class="heart" src="images/119900674-removebg-preview%202.png">
+													<div class="t-slide">
+														<h4 class="title">رژلب برند الیزا</h4>
+														<p class="brand-name">برند: الیزا</p>
+														<h4>تومان 100.000</h4>
+													</div>
+												</div>
+											</a>							
+										</div>
+										<div class="col-md-3 col-sm-12"> 
+											<a href="" class="prod">
+												<div class="slide">
+													<img class="heart" src="images/119900674-removebg-preview%202.png">
+													<div class="t-slide">
+														<h4 class="title">رژلب برند الیزا</h4>
+														<p class="brand-name">برند: الیزا</p>
+														<h4>تومان 100.000</h4>
+													</div>
+												</div>
+											</a>						
+										</div>
+										<div class="col-md-3 col-sm-12">
+											<a href="" class="prod">
+												<div class="slide">
+													<img class="heart" src="images/119900674-removebg-preview%202.png">
+													<div class="t-slide">
+														<h4 class="title">رژلب برند الیزا</h4>
+														<p class="brand-name">برند: الیزا</p>
+														<h4>تومان 100.000</h4>
+													</div>
+												</div>
+											</a>			
+										</div>
+								</div>			  
+								</div>
+								<script src="jquery-3.5.1.min.js"></script>
+											<script src="index.js"></script>							
+											<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+											<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" ></script>
+							
+							<script>
+								$(".owl-carousel").owlCarousel({
+								   autoplay:true,
+								   items:1,
+								   loop:true,
+								   autoplayHoverPause:true,
+								   margin:66,
+								   nav:true,
+								   responsive:{
+									   0:{
+										   items:1,
+									   },
+									   768:{
+										   items:2,
+									   },
+									   900:{
+										   items:4,
+									   }
+								   }
+								   }
+								);
+							   </script>
+											 
+							<div class="slider-2"></div>
+						</div>
+						  </div>
+						  
+						  <div id="Tokyo" class="tabcontent">
+							<div class="slider-1">
+								<div class="container">
+									<div class="owl-carousel owl-theme">
+										<div class="col-md-3 col-sm-12"> 
+											<a href="" class="prod">
+												<div class="slide">
+													<img class="heart" src="images/119900674-removebg-preview%202.png">
+													<div class="t-slide">
+														<h4 class="title">رژلب برند الیزا</h4>
+														<p class="brand-name">برند: الیزا</p>
+														<h4>تومان 100.000</h4>
+													</div>
+												</div>
+											</a>					
+										</div>
+										<div class="col-md-3 col-sm-12"> 
+											<a href="" class="prod">
+												<div class="slide">
+													<img class="heart" src="images/119900674-removebg-preview%202.png">
+													<div class="t-slide">
+														<h4 class="title">رژلب برند الیزا</h4>
+														<p class="brand-name">برند: الیزا</p>
+														<h4>تومان 100.000</h4>
+													</div>
+												</div>
+											</a>							
+										</div>
+										<div class="col-md-3 col-sm-12"> 
+											<a href="" class="prod">
+												<div class="slide">
+													<img class="heart" src="images/119900674-removebg-preview%202.png">
+													<div class="t-slide">
+														<h4 class="title">رژلب برند الیزا</h4>
+														<p class="brand-name">برند: الیزا</p>
+														<h4>تومان 100.000</h4>
+													</div>
+												</div>
+											</a>						
+										</div>
+										<div class="col-md-3 col-sm-12">
+											<a href="" class="prod">
+												<div class="slide">
+													<img class="heart" src="images/119900674-removebg-preview%202.png">
+													<div class="t-slide">
+														<h4 class="title">رژلب برند الیزا</h4>
+														<p class="brand-name">برند: الیزا</p>
+														<h4>تومان 100.000</h4>
+													</div>
+												</div>
+											</a>			
+										</div>
+								</div>			  
+								</div>
+								<script src="jquery-3.5.1.min.js"></script>
+											<script src="index.js"></script>							
+											<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+											<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" ></script>
+							
+							<script>
+								$(".owl-carousel").owlCarousel({
+								   autoplay:true,
+								   items:1,
+								   loop:true,
+								   autoplayHoverPause:true,
+								   margin:66,
+								   nav:true,
+								   responsive:{
+									   0:{
+										   items:1,
+									   },
+									   768:{
+										   items:2,
+									   },
+									   900:{
+										   items:4,
+									   }
+								   }
+								   }
+								);
+							   </script>
+											 
+							<div class="slider-2"></div>
+						</div>
+						  </div>
 				</div>
 				<div class="col-md-6 col-sm-12">
 					<h3>محصولات <b>جدید</b></h3>
 				</div>
 			</div>
 			</div>
-			<div class="slider-1">
-				<div class="container">
-					<div class="owl-carousel owl-theme">
-						<div class="col-md-3 col-sm-12"> 
-							<a href="" class="prod">
-								<div class="slide">
-									<img class="heart" src="images/119900674-removebg-preview%202.png">
-									<div class="t-slide">
-										<h4 class="title">رژلب برند الیزا</h4>
-										<p class="brand-name">برند: الیزا</p>
-										<h4>تومان 100.000</h4>
-									</div>
-								</div>
-							</a>					
-						</div>
-						<div class="col-md-3 col-sm-12"> 
-							<a href="" class="prod">
-								<div class="slide">
-									<img class="heart" src="images/119900674-removebg-preview%202.png">
-									<div class="t-slide">
-										<h4 class="title">رژلب برند الیزا</h4>
-										<p class="brand-name">برند: الیزا</p>
-										<h4>تومان 100.000</h4>
-									</div>
-								</div>
-							</a>							
-						</div>
-						<div class="col-md-3 col-sm-12"> 
-							<a href="" class="prod">
-								<div class="slide">
-									<img class="heart" src="images/119900674-removebg-preview%202.png">
-									<div class="t-slide">
-										<h4 class="title">رژلب برند الیزا</h4>
-										<p class="brand-name">برند: الیزا</p>
-										<h4>تومان 100.000</h4>
-									</div>
-								</div>
-							</a>						
-						</div>
-						<div class="col-md-3 col-sm-12">
-							<a href="" class="prod">
-								<div class="slide">
-									<img class="heart" src="images/119900674-removebg-preview%202.png">
-									<div class="t-slide">
-										<h4 class="title">رژلب برند الیزا</h4>
-										<p class="brand-name">برند: الیزا</p>
-										<h4>تومان 100.000</h4>
-									</div>
-								</div>
-							</a>			
-						</div>
-				</div>			  
-				</div>
-				<script src="jquery-3.5.1.min.js"></script>
-							<script src="index.js"></script>							
-							<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-							<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" ></script>
-			
-			<script>
-				$(".owl-carousel").owlCarousel({
-				   autoplay:true,
-				   items:4,
-				   loop:true,
-				   autoplayHoverPause:true,
-				   margin:60,
-				   nav:true,
-				   responsive:{
-					   0:{
-						   items:1,
-					   },
-					   768:{
-						   items:2,
-					   },
-					   900:{
-						   items:3,
-					   }
-				   }
-				   }
-				);
-			   </script>
-							 
-			<div class="slider-2"></div>
-		</div>
 			<div class="container">
 				<div class="row">
 					<div class="lg">
-						<div class="col-md-12 col-sm-12">
-							<img alt="" src="images/Mask%20Group.png"> 
+						<div class="col-md-5ths col-sm-12">
+							<img alt="" src="images/Mask%20Group.png">
+						</div> 
+						<div class="col-md-5ths col-sm-12">
 							<img alt="" src="images/Mask%20Group%20(1).png">
+						</div>
+						<div class="col-md-5ths col-sm-12">
 							<img alt="" src="images/Mask%20Group%20(2).png">
+						</div>								
+						<div class="col-md-5ths col-sm-12">
 							<img alt="" src="images/Mask%20Group%20(3).png">
+						</div>
+						<div class="col-md-5ths col-sm-12">
 							<img alt="" src="images/Mask%20Group%20(4).png">
-							</div>
+						</div>
 					</div>
 				</div>
 			</div>
