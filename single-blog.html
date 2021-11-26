@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="fa_IR" dir="rtl">
+<head>
+	<meta charset="UTF-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>desktop2</title>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/master.css" rel="stylesheet">
+	<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+</head>
+<body>
+	<header id="header">
+		<div class="nav">
+			<div class="container-fuild" style="padding:0px 5%;">
+				<div class="col-md-6 col-sm-12">
+					<div class="phone">
+                        <img src="images/Call.png" alt=""><span>0912-1212-111</span>
+					</div>
+				</div>
+				<span class="humburger-menu" onclick="openNav()">☰</span>
+				<div id="mySidenav" class="sidenav" style="display: none;">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+					<div class="logo"><img src="images/logo.png"></div>
+					<h4>دسته‌بندی محصولات</h4>
+					<div>
+						<ul>
+							<li>
+								<a href="">آرایش صورت</a>
+							</li>
+							<li>
+								<a href="">چشم و ابرو</a>
+							</li>
+							<li>
+								<a href="">گونه و لب</a>
+							</li>
+							<li>
+								<a href="">بدن</a>
+							</li>
+							<li>
+								<a href="">براش و اسفنج</a>
+							</li>
+							<li>
+								<a href="">اکسسوری و کیف</a>
+							</li>
+						</ul>
+					</div>
+					<h4>لینک‌های مفید</h4>
+					<div>
+						<ul>
+							<li>
+								<a href="">باشگاه مشتریان</a>
+							</li>
+							<li>
+								<a href="">آکادمی</a>
+							</li>
+							<li>
+								<a href="">بلاگ</a>
+							</li>
+							<li>
+								<a href="">تماس باما</a>
+							</li>
+							<li>
+								<a href="">درباره ما</a>
+							</li>
+						</ul>
+					</div>
+				  </div>
+				<div class="col-md-6 col-sm-12">
+					<div class="menu">
+						<ul>
+							<li>
+								<a href="">باشگاه مشتریان</a>
+							</li>
+							<li>
+								<a href="">آکادمی</a>
+							</li>
+							<li>
+								<a href="">بلاگ</a>
+							</li>
+							<li>
+								<a href="">تماس باما</a>
+							</li>
+							<li>
+								<a href="">درباره ما</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="logo-box">
+				<div class="col-md-4">
+					<div class="login">
+						<ul>
+							<li><button><img src="images/Profile.png"><a>حساب کاربری</a></button></li>
+							<li><a href=""><img src="images/Stroke-15.png" alt=""></a></li>
+							<li id="shophov" onmouseover="openshop()" onmouseout="closeshop()">
+								<a href=""><img src="images/Bag.png" alt=""></a>
+								<div class="shopbag" id="shopbag" style="display: none;">
+									<h5><b>کد تخفیف</b></h5>
+									<div class="listbuy">
+										<a href="">
+											<img src="images/119900674-removebg-preview 2.png" alt="">
+											<p>4 عدد</p>
+											<h6>محصول تستی</h6>
+										</a>
+										<a href="" class="editlist"><img src="images/Edit.png" alt=""></a>
+									</div>
+									<div class="listbuy">
+										<a href="">
+											<img src="images/119900674-removebg-preview 2.png" alt="">
+											<p>4 عدد</p>
+											<h6>محصول تستی</h6>
+										</a>
+										<a href="" class="editlist"><img src="images/Edit.png" alt=""></a>
+									</div>
+									<div class="bagbtns">
+										<p class="itemnum">24 آیتم</p>
+										<a href="" class="paybag">پرداخت</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="logo"><img alt="" src="images/logo.png"></div>
+				</div>
+				<div class="col-md-4">
+					<div class="search">
+						<form action="">
+						<input type="search" name="" id="" placeholder="جستجو بین محصولات..."></form>
+						<button><img src="images/Group 17.png" alt="">...جستجو بین محصولات</button> <select id="opt" name="">
+							<optgroup>
+								<option selected disabled value="">
+									دسته بندی
+								</option>
+								<option value="">
+									آرایش صورت
+								</option>
+								<option value=" ">
+									آرایش لب
+								</option>
+								<option value="">
+									آرایش چشم و ابرو
+								</option>
+							</optgroup>
+						</select>
+					</div>
+					<div class="line-header"></div>
+				</div>
+			</div>
+			<div class="list">
+				<div class="col-md-12">
+					<div class="listbar">
+						<ul>
+							<li>
+								<a href="">آرایش صورت</a>
+							</li>
+							<li>
+								<a href="">چشم و ابرو</a>
+							</li>
+							<li>
+								<a href="">گونه و لب</a>
+							</li>
+							<li>
+								<a href="">بدن</a>
+							</li>
+							<li>
+								<a href="">براش و اسفنج</a>
+							</li>
+							<li>
+								<a href="">اکسسوری و کیف</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="line"></div>
+	</header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="blogorg">
+                    <h3>ایران در کدام گروه قرار دارد؟</h3>
+                    <p class="blogdate">29/03/1400</p>
+                    <img src="images/-5823662817004336571_121 1.png" alt="">
+                    <p class="blogtext">لورم ایپسوم متن ساختگی با تولید نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است لورم ایپسوم متن ساختگی با تولید نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است لورم ایپسوم متن ساختگی با تولید نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است </p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="searchbar">
+                    <h4>جست و جو</h4>
+                    <hr class="titledivider">
+                    <form action="">
+                        <input type="search" name="" id="">
+                    </form>
+                </div>
+                <div class="latestblog">
+                    <h4>آخرین مطالب</h4>
+                    <hr class="titledivider">
+                    <a href="" class="blogurl">
+                        <h4>آیا ایران برنده رقابت میشود؟</h4>
+                        <p>لوریم ایپسوم متن ساختگی لوریم ایپسوم متن ساختگی لوریم ایپسوم متن ساختگی </p>
+                    </a>
+                    <hr>
+                    <a href="" class="blogurl">
+                        <h4>آیا ایران برنده رقابت میشود؟</h4>
+                        <p>لوریم ایپسوم متن ساختگی لوریم ایپسوم متن ساختگی لوریم ایپسوم متن ساختگی </p>
+                    </a>
+                    <hr>
+                    <a href="" class="blogurl">
+                        <h4>آیا ایران برنده رقابت میشود؟</h4>
+                        <p>لوریم ایپسوم متن ساختگی لوریم ایپسوم متن ساختگی لوریم ایپسوم متن ساختگی </p>
+                    </a>
+                    <hr>
+                    <a href="" class="moreblog">مشاهده مطالب بیشتر</a>
+                </div>
+                <div class="latestproducts">
+                    <h4>آخرین محصولات</h4>
+                    <hr class="titledivider">
+                    <a href="" class="producturl">
+                        <img src="images/-5823662817004336571_121 1.png" alt="">
+                        <h4>رژلب آرایشی یاکوزا<br><span class="price">قیمت: 340,000 تومان</span></h4>
+                    </a>
+                    <hr>
+                    <a href="" class="producturl">
+                        <img src="images/-5823662817004336571_121 1.png" alt="">
+                        <h4>رژلب آرایشی یاکوزا<br><span class="price">قیمت: 340,000 تومان</span></h4>
+                    </a>
+                    <hr>
+                    <a href="" class="producturl">
+                        <img src="images/-5823662817004336571_121 1.png" alt="">
+                        <h4>رژلب آرایشی یاکوزا<br><span class="price">قیمت: 340,000 تومان</span></h4>
+                    </a>
+                    <hr>
+                    <a href="" class="moreproduct">مشاهده محصولات بیشتر</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="lg">
+                <div class="col-md-5ths col-sm-12">
+                    <img alt="" src="images/Mask%20Group.png">
+                </div> 
+                <div class="col-md-5ths col-sm-12">
+                    <img alt="" src="images/Mask%20Group%20(1).png">
+                </div>
+                <div class="col-md-5ths col-sm-12">
+                    <img alt="" src="images/Mask%20Group%20(2).png">
+                </div>								
+                <div class="col-md-5ths col-sm-12">
+                    <img alt="" src="images/Mask%20Group%20(3).png">
+                </div>
+                <div class="col-md-5ths col-sm-12">
+                    <img alt="" src="images/Mask%20Group%20(4).png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="footer">
+		<div class="footer">
+			<div class="container-fluid">
+				<div class="footericons">
+					<div class="row">
+						<div class="col-md-5ths">
+							<div class="tit">
+								تخصص اصالت
+							</div>
+							<div class="icon">
+								<img alt="" src="images/Group%20(6).png">
+							</div>
+						</div>
+						<div class="col-md-5ths">
+							<div class="tit">
+								پرداخت آنلاین
+							</div>
+							<div class="icon">
+								<img alt="" src="images/Group.png">
+							</div>
+						</div>
+						<div class="col-md-5ths">
+							<div class="tit">
+								پشتیبانی ساعات کاری
+							</div>
+							<div class="icon">
+								<img alt="" src="images/Group%20(2).png">
+							</div>
+						</div>
+						<div class="col-md-5ths">
+							<div class="tit">
+								پشتیبانی ساعات کاری
+							</div>
+							<div class="icon">
+								<img alt="" src="images/247.png">
+							</div>
+						</div>
+						<div class="col-md-5ths">
+							<div class="tit">
+								هفت روز ضمانت بازگشت وجه
+							</div>
+							<div class="icon"><img alt="" src="images/Group.png"></div>
+						</div>
+					</div>
+				</div>
+			<div class="container-fluid">
+				<div class="row">						
+					<div class="footermenu">
+					<div class="col-md-8">
+						<div class="row">
+							<div class="col-md-3">
+								<div class="ft-tit">
+									<a href=""><p>گزارش مشکل</p></a>
+									<a href=""><p>پشتیبانی</p></a>
+									<a href=""><p>روند ارسال</p></a>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="ft-tit">
+									<a href=""><p>آدرس شعبات</p></a>
+									<a href=""><p>مرجوع کالا</p></a>
+									<a href=""><p>سیاست کاری ما</p></a>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="ft-tit">
+									<h4>لینک‌های مفید</h4>
+									<a href=""><p>تیم ما</p></a>
+									<a href=""><p>تضمین محصول</p></a>
+								</div>
+							</div>	
+							<div class="col-md-3">
+								<div class="ft-tit">
+									<h4>درباره ما</h4>
+									<a href=""><p>تماس با ما</p></a>
+									<a href=""><p>درباره ما</p></a>
+								</div>
+							</div>	
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href=""><img alt="" class="gp" src="images/Group%2086.png"></a>
+					</div>
+				</div>
+			</div>
+			</div>
+			<div class="copyrightbar">
+				<div class="row">
+					<div class="col-md-9">
+						<div class="copytext">
+							<p>© 2021 Dubai Shop Market All rights reserved.</p>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="social">
+							<a href=""><img src="images/Vector.png" alt=""></a>
+							<a href=""><img src="images/Group (7).png" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		</div>
+	</section>
+	<script src="js/jquery-3.6.0.min.js">
+	</script> 
+	<script src="js/bootstrap.js">
+	</script>
+		<script src="js/main.js"></script>
+		<script src="https://kit.fontawesome.com/023bc4304e.js" crossorigin="anonymous"></script>
+</body>
+</html>

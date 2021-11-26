@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="fa_IR">
+<head>
+	<meta charset="UTF-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>desktop2</title>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/master.css" rel="stylesheet">
+	<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+	
+</head>
+<body>
+	<header id="header">
+		<div class="nav">
+			<div class="container-fuild" style="padding:0px 5%;">
+				<div class="col-md-6 col-sm-12">
+					<div class="phone">
+                        <img src="images/Call.png" alt=""><span>0912-1212-111</span>
+					</div>
+				</div>
+				<span class="humburger-menu" onclick="openNav()">☰</span>
+				<div id="mySidenav" class="sidenav" style="display: none;">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+					<div class="logo"><img src="images/logo.png"></div>
+					<h4>دسته‌بندی محصولات</h4>
+					<div>
+						<ul>
+							<li>
+								<a href="">آرایش صورت</a>
+							</li>
+							<li>
+								<a href="">چشم و ابرو</a>
+							</li>
+							<li>
+								<a href="">گونه و لب</a>
+							</li>
+							<li>
+								<a href="">بدن</a>
+							</li>
+							<li>
+								<a href="">براش و اسفنج</a>
+							</li>
+							<li>
+								<a href="">اکسسوری و کیف</a>
+							</li>
+						</ul>
+					</div>
+					<h4>لینک‌های مفید</h4>
+					<div>
+						<ul>
+							<li>
+								<a href="">باشگاه مشتریان</a>
+							</li>
+							<li>
+								<a href="">آکادمی</a>
+							</li>
+							<li>
+								<a href="">بلاگ</a>
+							</li>
+							<li>
+								<a href="">تماس باما</a>
+							</li>
+							<li>
+								<a href="">درباره ما</a>
+							</li>
+						</ul>
+					</div>
+				  </div>
+				<div class="col-md-6 col-sm-12">
+					<div class="menu">
+						<ul>
+							<li>
+								<a href="">باشگاه مشتریان</a>
+							</li>
+							<li>
+								<a href="">آکادمی</a>
+							</li>
+							<li>
+								<a href="">بلاگ</a>
+							</li>
+							<li>
+								<a href="">تماس باما</a>
+							</li>
+							<li>
+								<a href="">درباره ما</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="logo-box">
+				<div class="col-md-4">
+					<div class="login">
+						<ul>
+							<li><button><img src="images/Profile.png"><a>حساب کاربری</a></button></li>
+							<li><a href=""><img src="images/Stroke-15.png" alt=""></a></li>
+							<li id="shophov" onmouseover="openshop()" onmouseout="closeshop()">
+								<a href=""><img src="images/Bag.png" alt=""></a>
+								<div class="shopbag" id="shopbag" style="display: none;">
+									<h5><b>کد تخفیف</b></h5>
+									<div class="listbuy">
+										<a href="">
+											<img src="images/119900674-removebg-preview 2.png" alt="">
+											<p>4 عدد</p>
+											<h6>محصول تستی</h6>
+										</a>
+										<a href="" class="editlist"><img src="images/Edit.png" alt=""></a>
+									</div>
+									<div class="listbuy">
+										<a href="">
+											<img src="images/119900674-removebg-preview 2.png" alt="">
+											<p>4 عدد</p>
+											<h6>محصول تستی</h6>
+										</a>
+										<a href="" class="editlist"><img src="images/Edit.png" alt=""></a>
+									</div>
+									<div class="bagbtns">
+										<p class="itemnum">24 آیتم</p>
+										<a href="" class="paybag">پرداخت</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="logo"><img alt="" src="images/logo.png"></div>
+				</div>
+				<div class="col-md-4">
+					<div class="search">
+						<form action="">
+						<input type="search" name="" id="" placeholder="جستجو بین محصولات..."></form>
+						<button><img src="images/Group 17.png" alt="">...جستجو بین محصولات</button> <select id="opt" name="">
+							<optgroup>
+								<option selected disabled value="">
+									دسته بندی
+								</option>
+								<option value="">
+									آرایش صورت
+								</option>
+								<option value=" ">
+									آرایش لب
+								</option>
+								<option value="">
+									آرایش چشم و ابرو
+								</option>
+							</optgroup>
+						</select>
+					</div>
+					<div class="line-header"></div>
+				</div>
+			</div>
+			<div class="list">
+				<div class="col-md-12">
+					<div class="listbar">
+						<ul>
+							<li>
+								<a href="">آرایش صورت</a>
+							</li>
+							<li>
+								<a href="">چشم و ابرو</a>
+							</li>
+							<li>
+								<a href="">گونه و لب</a>
+							</li>
+							<li>
+								<a href="">بدن</a>
+							</li>
+							<li>
+								<a href="">براش و اسفنج</a>
+							</li>
+							<li>
+								<a href="">اکسسوری و کیف</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="line"></div>
+	</header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="gallery">
+                    <div class="mySlides" id="defaultOpen">
+                        <img src="images/119900674-removebg-preview 2.png">
+                    </div>
+                    <div class="mySlides">
+                        <img src="images/119900674-removebg-preview 2.png">
+                    </div>
+                    <div class="mySlides">
+                        <img src="images/119900674-removebg-preview 2.png">
+                    </div>
+                      <a class="prevpic" onclick="plusSlides(1)">❮</a>
+                      <a class="nextpic" onclick="plusSlides(-1)">❯</a>
+                      <div class="row">
+                        <div class="columnpic">
+                          <img class="demo cursor" src="images/119900674-removebg-preview 2.png" onclick="currentSlide(1)" alt="The Woods">
+                        </div>
+                        <div class="columnpic">
+                          <img class="demo cursor" src="images/119900674-removebg-preview 2.png" onclick="currentSlide(2)" alt="Cinque Terre">
+                        </div>
+                        <div class="columnpic">
+                          <img class="demo cursor" src="images/119900674-removebg-preview 2.png" onclick="currentSlide(3)" alt="Mountains and fjords">
+                        </div>
+                      </div>                    
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="producttext">
+                    <h2>رژلب مخصوص توت فرنگی</h2>
+                    <p class="productprice">340,000 تومان</p>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+					<div class="productmore">
+						<div class="counter">
+							<span class="down" onClick='decreaseCount(event, this)'>-</span>
+							<input type="text" value="1">
+							<span class="up" onClick='increaseCount(event, this)'>+</span>
+						</div>
+						<a href="#">افزودن به سبد خرید</a>
+					</div>
+					<hr class="prodline">
+					<div class="productcat">
+						<p>دسته‌بندی: آرایشی و بهداشتی، رژلب</p>
+						<p>اشتراک گذاری 
+							<a href=""><i class="fab fa-telegram"></i></a> 
+							<a href=""><i class="fab fa-linkedin"></i></a> 
+							<a href=""><i class="fab fa-pinterest"></i></a>
+							<a href=""><i class="fab fa-twitter"></i></a>
+							<a href=""><i class="fab fa-facebook-f"></i></a>
+						</p>
+					</div>
+                </div>
+            </div>
+        </div>
+		<hr class="proddivider">
+		<div class="container">
+			<div class="row">
+				<div class="productdetshead">
+					<div class="col-md-6"></div>
+					<div class="col-md-2 col-xs-4">
+						<button class="prodtablinks" onclick="openCity1(event, 'Tokyo')">نظرات کاربران</button>				  
+					</div>
+					<div class="col-md-2 col-xs-4">
+						<button class="prodtablinks" onclick="openCity1(event, 'Paris')">جدول مشخصات</button>						
+					</div>
+					<div class="col-md-2 col-xs-4">
+						<button class="prodtablinks" onclick="openCity1(event, 'London')" id="defaultOpenn">توضیحات</button>
+					</div>
+				</div>
+				<div class="productdestbody">
+					<div id="London" class="prodtabcontent">
+						<h3>توضیحات</h3>
+						<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+					  </div>
+					  
+					  <div id="Paris" class="prodtabcontent">
+						<h3>مشخصات</h3>
+						<table class="productspecs">
+							<tr>
+								<th>رنگ</th>
+								<td>قرمز</td>
+							</tr>
+							<tr>
+								<th>رنگ</th>
+								<td>قرمز</td>
+							</tr>
+							<tr>
+								<th>رنگ</th>
+								<td>قرمز</td>
+							</tr>
+							<tr>
+								<th>رنگ</th>
+								<td>قرمز</td>
+							</tr>
+						</table>
+					  </div>
+					  
+					  <div id="Tokyo" class="prodtabcontent">
+						<h3>نظرات کاربران</h3>
+						<div class="commentpart">
+							<div class="col-md-10 col-xs-10">
+								<div class="comment">
+									<p class="commentstats">23/9/1400</p>
+									<h3><b>محمدرضا</b> گفت:</h3>
+									<p>خیلی عالی واقعا ممنون از مطالب زیباتون</p>
+								</div>
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-2">
+								<div class="userimg"><img src="images/Profile.png" alt=""></div>
+							</div>
+						</div>
+						<div class="commentpart">
+							<div class="col-md-10 col-xs-10">
+								<div class="comment">
+									<p class="commentstats">23/9/1400</p>
+									<h3><b>محمدرضا</b> گفت:</h3>
+									<p>خیلی عالی واقعا ممنون از مطالب زیباتون</p>
+								</div>
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-2">
+								<div class="userimg"><img src="images/Profile.png" alt=""></div>
+							</div>
+						</div>
+						<div class="commentpart">
+							<div class="col-md-10 col-xs-10">
+								<div class="comment">
+									<p class="commentstats">23/9/1400</p>
+									<h3><b>محمدرضا</b> گفت:</h3>
+									<p>خیلی عالی واقعا ممنون از مطالب زیباتون</p>
+								</div>
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-2">
+								<div class="userimg"><img src="images/Profile.png" alt=""></div>
+							</div>
+						</div>
+						<div class="addcomment">
+							<form action="">
+								<div class="col-md-6">
+									<div class="namepl">
+										<label for="mail">ایمیل</label>
+										<input type="email" id="mail">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="namepl">
+										<label for="firstname">نام و نام خانوادگی</label>
+										<input type="text" id="firstname">
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="commentpl">
+										<label for="yourcomment">دیدگاه شما</label><br>
+										<textarea id="yourcomment" rows="4"></textarea>
+									</div>
+								</div>
+								<input type="submit" value="فرستادن دیدگاه">
+							</form>
+						</div>
+					  </div>
+				</div>
+			</div>
+		</div>
+		<div class="new-product-2">
+			<div class="col-md-12 col-sm-12">
+				<h3>محصولات <b>آرشیو</b></h3>
+			</div>
+		</div>
+		<div class="slider-1">
+			<div class="container-fuild">
+				<div class="row">
+					<div class="col-md-3 col-sm-12"> 
+						<a href="" class="prod">
+							<div class="slide">
+								<img class="heart" src="images/119900674-removebg-preview%202.png">
+								<div class="t-slide">
+									<h4 class="title">رژلب برند الیزا</h4>
+									<p class="brand-name">برند: الیزا</p>
+									<h4>تومان 100.000</h4>
+								</div>
+							</div>
+						</a>					
+					</div>
+					<div class="col-md-3 col-sm-12"> 
+						<a href="" class="prod">
+							<div class="slide">
+								<img class="heart" src="images/119900674-removebg-preview%202.png">
+								<div class="t-slide">
+									<h4 class="title">رژلب برند الیزا</h4>
+									<p class="brand-name">برند: الیزا</p>
+									<h4>تومان 100.000</h4>
+								</div>
+							</div>
+						</a>							
+					</div>
+					<div class="col-md-3 col-sm-12"> 
+						<a href="" class="prod">
+							<div class="slide">
+								<img class="heart" src="images/119900674-removebg-preview%202.png">
+								<div class="t-slide">
+									<h4 class="title">رژلب برند الیزا</h4>
+									<p class="brand-name">برند: الیزا</p>
+									<h4>تومان 100.000</h4>
+								</div>
+							</div>
+						</a>						
+					</div>
+					<div class="col-md-3 col-sm-12">
+						<a href="" class="prod">
+							<div class="slide">
+								<img class="heart" src="images/119900674-removebg-preview%202.png">
+								<div class="t-slide">
+									<h4 class="title">رژلب برند الیزا</h4>
+									<p class="brand-name">برند: الیزا</p>
+									<h4>تومان 100.000</h4>
+								</div>
+							</div>
+						</a>			
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+    <section id="footer">
+		<div class="footer">
+			<div class="container-fluid">
+				<div class="footericons">
+					<div class="row">
+						<div class="col-md-5ths">
+							<div class="tit">
+								تخصص اصالت
+							</div>
+							<div class="icon">
+								<img alt="" src="images/Group%20(6).png">
+							</div>
+						</div>
+						<div class="col-md-5ths">
+							<div class="tit">
+								پرداخت آنلاین
+							</div>
+							<div class="icon">
+								<img alt="" src="images/Group.png">
+							</div>
+						</div>
+						<div class="col-md-5ths">
+							<div class="tit">
+								پشتیبانی ساعات کاری
+							</div>
+							<div class="icon">
+								<img alt="" src="images/Group%20(2).png">
+							</div>
+						</div>
+						<div class="col-md-5ths">
+							<div class="tit">
+								پشتیبانی ساعات کاری
+							</div>
+							<div class="icon">
+								<img alt="" src="images/247.png">
+							</div>
+						</div>
+						<div class="col-md-5ths">
+							<div class="tit">
+								هفت روز ضمانت بازگشت وجه
+							</div>
+							<div class="icon"><img alt="" src="images/Group.png"></div>
+						</div>
+					</div>
+				</div>
+			<div class="container-fluid">
+				<div class="row">						
+					<div class="footermenu">
+					<div class="col-md-8">
+						<div class="row">
+							<div class="col-md-3">
+								<div class="ft-tit">
+									<a href=""><p>گزارش مشکل</p></a>
+									<a href=""><p>پشتیبانی</p></a>
+									<a href=""><p>روند ارسال</p></a>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="ft-tit">
+									<a href=""><p>آدرس شعبات</p></a>
+									<a href=""><p>مرجوع کالا</p></a>
+									<a href=""><p>سیاست کاری ما</p></a>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="ft-tit">
+									<h4>لینک‌های مفید</h4>
+									<a href=""><p>تیم ما</p></a>
+									<a href=""><p>تضمین محصول</p></a>
+								</div>
+							</div>	
+							<div class="col-md-3">
+								<div class="ft-tit">
+									<h4>درباره ما</h4>
+									<a href=""><p>تماس با ما</p></a>
+									<a href=""><p>درباره ما</p></a>
+								</div>
+							</div>	
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href=""><img alt="" class="gp" src="images/Group%2086.png"></a>
+					</div>
+				</div>
+			</div>
+			</div>
+			<div class="copyrightbar">
+				<div class="row">
+					<div class="col-md-9">
+						<div class="copytext">
+							<p>© 2021 Dubai Shop Market All rights reserved.</p>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="social">
+							<a href=""><img src="images/Vector.png" alt=""></a>
+							<a href=""><img src="images/Group (7).png" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		</div>
+	</section>
+	<script src="js/jquery-3.6.0.min.js">
+	</script> 
+	<script src="js/bootstrap.js">
+	</script>
+		<script src="js/main.js"></script>
+		<script src="https://kit.fontawesome.com/023bc4304e.js" crossorigin="anonymous"></script>
+</body>
+</html>
